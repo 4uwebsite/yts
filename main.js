@@ -777,7 +777,7 @@ function getMovieIdsFromHTML(html) {
 
 
 // TESTING
-const url = 'https://corsproxy.io/?https%3A%2F%2Fwww.imdb.com%2Fuser%2Fur27418082%2Fwatchlist%2F'; // Replace with your desired URL
+const url = 'https://corsproxy.io/?' + encodeURIComponent('https://www.imdb.com/user/ur27418082/watchlist/'); // Replace with your desired URL
 
 fetch(url, { mode: 'no-cors' })
   .then(response => {

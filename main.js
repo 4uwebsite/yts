@@ -772,10 +772,24 @@ function getMovieIdsFromHTML(html) {
 }
 
 // Call the function with the manually copied HTML content
-getMovieIdsFromHTML(sourceHTML);
+// getMovieIdsFromHTML(sourceHTML);
+
 
 
 // TESTING
+const url = 'https://apple.com'; // Replace with your desired URL
+
+fetch(url, { mode: 'no-cors' })
+  .then(response => {
+    // You can't access the response body in 'no-cors' mode
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    // Log response to confirm it's been received
+    console.log('Response received, but HTML content cannot be accessed in no-cors mode');
+  })
+  .catch(error => console.error('Error fetching HTML:', error));
+
 
 
 

@@ -4,6 +4,7 @@ This app shows which movie torrents are available for download based on the HTML
 
 
 # Version Control
+- 1.1.0 - R&D code.
 - 1.0.0 - R&D code.
 
 

@@ -46,13 +46,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 
 /* TYPOGRAPHY - START */
-* {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: var(--white-base-font-colour);
-}
-.details__label {
-    color: var(--gray-500);
-}
+
 /* TYPOGRAPHY - END */
 
 
@@ -62,17 +56,12 @@ main {
     max-width: 90vw;
     max-width: 90dvw;
 }
-p {
-    margin: 0.3em 0;
-}
 /* GLOBAL - END */
 
 
 
 /* CLASSES & IDs - START */
-.info-section__details {
-    min-width: 15em;
-}
+
 /* CLASSES & IDs - END */
 
 
@@ -83,9 +72,6 @@ p {
 }
 .justify-content--center {
     justify-content: center;
-}
-.gap {
-    gap: 1em;
 }
 /* UTILS - END */
 

@@ -33,35 +33,111 @@ p, h1, h2, h3, h4, h5, h6 {
 
 /* COLOURS - START */
 :root {
-    --dark-grey-bg: #212121;
-    --white-base-font-colour: #ECECEC;
-    --gray-500: hsl(0, 0%, 42%);
-    --gray-950: hsl(0, 0%, 7%);
+    --white: #ECECEC;
+    --yellow: #F5C518;
+    --red: #FF0000;
+    --gray-500: #6b6b6b;
+    --grey-800: #212121;
+    --gray-950: #121212;
 }
-.dark-grey-bg {
-    background-color: var(--dark-grey-bg);
+.backgroud-color--grey-800 {
+    background-color: var(--grey-800);
 }
 /* COLOURS - END */
 
 
 
 /* TYPOGRAPHY - START */
-
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--gray-500);
+    line-height: 1.5rem;
+}
+.font__color--white {
+    color: var(--white);
+}
+.font__color--yellow {
+    color: var(--yellow);
+}
+.font__color--red {
+    color: var(--red);
+}
+.font__size--100 {
+    font-size: 0.75rem;
+}
+.font__size--200 {
+    font-size: 0.8rem;
+}
+.font__size--400 {
+    font-size: 1rem;
+}
+.font__size--500 {
+    font-size: 1.1rem;
+}
+.font__size--600 {
+    font-size: 1.2rem;
+}
+.font__weight--600 {
+    font-weight: 600;
+}
 /* TYPOGRAPHY - END */
+
+
+
+/* MATERIAL ICONS - START */
+/* .material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+} */
+/* MATERIAL ICONS - END */
 
 
 
 /* GLOBAL - START */
 main {
-    max-width: 90vw;
-    max-width: 90dvw;
+    max-width: 95vw;
+    max-width: 95dvw;
+    margin: 2em 0;
+}
+.q1080p {
+    background-color: white;
+}
+tbody td {
+    padding: 0 0.3em;
 }
 /* GLOBAL - END */
 
 
 
 /* CLASSES & IDs - START */
-
+.main__movie {
+    background-color: var(--gray-950);
+    padding: 0.5em;
+}
+.details__genre ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+.meta-details-blocks {
+    border: 1px solid var(--gray-500);
+    padding: 0 0.5em;
+}
+.meta__links {
+    padding: 0.3em 0.5em 0 0.5em;
+}
+.details__description {
+    max-width: 50ch;
+    margin: 1.8em 0 0.8em 0;
+}
+.details__torrents {
+    margin: 1.8em 0 0 0;
+    /* padding: 0.3em; */
+    /* border: 1px solid var(--gray-500); */
+    text-align: center;
+}
 /* CLASSES & IDs - END */
 
 
@@ -69,9 +145,17 @@ main {
 /* UTILS - START */
 .display--flex {
     display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
 }
 .justify-content--center {
     justify-content: center;
+}
+.align-items--center {
+    align-items: center;
+}
+.border-radius {
+    border-radius: 0.3em;
 }
 /* UTILS - END */
 

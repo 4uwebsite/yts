@@ -10,10 +10,9 @@ This app shows which movie torrents are available for download based on the HTML
 
 
 # TODO
-- [-] HTML & CSS
-- [-] Refactor & Validate
+- [-] HTML & CSS - Refactor & Validate
 - [-] JS
-- [-] Refactor & Validate
+- [-] JS - Refactor & Validate
 - [-] Tool Tips
 - [-] Refactor & Validate
 - [-] Testing & QA

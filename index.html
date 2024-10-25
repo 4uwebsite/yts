@@ -3,12 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YTS</title>
-    <script src="main.js" defer></script>
-</head>
-<body>
-    Look in console.
+    <meta name="author" content="Ramith Nanayakkara">
+    <meta name="description" content="This app shows which movie torrents are available for download based on the HTML of an IMDB Watchlist page.">
+    <meta name="keywords" content="torrents, movie, download, imdb">
 
-    Code works. Now build it into an app.
+    <title>YTS - IMDB Watchlist Torrents</title>
+    
+    <!-- Icons -->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    
+    
+    <!-- Styles & Scripts -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="assets/js/main.js" defer></script>
+
+    <!-- Open Graph Meta -->
+    <meta property="og:title" content="YTS">
+    <meta property="og:description" content="This app shows which movie torrents are available for download based on the HTML of an IMDB Watchlist page.">
+    <meta property="og:url" content="https://4uwebsite.github.io/yts/">
+    <meta property="og:image" content="open-graph-image.jpg">
+    <meta property="og:image:alt" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="YTS - IMDB Watchlist Torrents">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+</head>
+<body class="display--flex justify-content--center dark-grey-bg">
+    <main>
+        <div class="main__info-section display--flex gap">
+            <div class="info-section__poster">
+                <img src="https://yts.mx/assets/images/movies/blink_twice_2024/medium-cover.jpg" alt="Blink Twice" title="Blink Twice" loading="lazy">
+            </div>
+            <div class="info-section__details">
+                <p class="details__label">TITLE: <span class="details__data">Blink Twice</span> [2024]</p>
+                <p class="details__label">RATING: <span class="details__data">6.5</span></p>
+                <p class="details__label">RUNTIME: <span class="details__data">102 mins</span></p>
+                <p class="details__label">LANGUAGE: <span class="details__data">en</span></p>
+                <p class="details__label">IMDB ID: <span class="details__data"><a href="https://www.imdb.com/title/tt0087803/">tt12345678</a></span></p>
+                <p class="details__label">YTS ID: <span class="details__data"><a href="https://yts.mx/movies/blink-twice-2024">63909</a></span></p>
+                <p class="details__label">Trailer: <span class="details__data"><a href="https://www.youtube.com/watch?v=Q8PdffUfoF0">YT ICON</a></span></p>
+            </div>
+            <div class="info-section__desc">
+                <div class="desc__genre">Mystery Thriller</div>
+                <div class="desc__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus cupiditate officiis laborum recusandae distinctio ad ratione. Beatae optio consequuntur error. Sit, harum accusamus. Placeat, cupiditate nesciunt doloribus architecto optio deleniti.</div>
+                <div class="desc__torrents">
+                    <table>
+                        <caption>Available Torrents</caption>
+                        <thead>
+                            <tr>
+                                <th>QUALITY</th>
+                                <th>TYPE</th>
+                                <th>CODEC</th>
+                                <th>SIZE</th>
+                                <th>BIT DEPTH</th>
+                                <th>AUDIO CHANNELS</th>
+                                <th>SEEDS</th>
+                                <th>PEERS</th>
+                            </tr>
+                            <tr>
+                                <td><a href="https://yts.mx/torrent/download/7E67641743B52D65291AE9C2A4451DCE5771EC0D">720p</a></td>
+                                <td>web</td>
+                                <td>x264</td>
+                                <td>950.86 MB</td>
+                                <td>8</td>
+                                <td>2.0</td>
+                                <td>100</td>
+                                <td>98</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://yts.mx/torrent/download/7E67641743B52D65291AE9C2A4451DCE5771EC0D">720p</a></td>
+                                <td>web</td>
+                                <td>x264</td>
+                                <td>950.86 MB</td>
+                                <td>8</td>
+                                <td>2.0</td>
+                                <td>100</td>
+                                <td>98</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://yts.mx/torrent/download/7E67641743B52D65291AE9C2A4451DCE5771EC0D">720p</a></td>
+                                <td>web</td>
+                                <td>x264</td>
+                                <td>950.86 MB</td>
+                                <td>8</td>
+                                <td>2.0</td>
+                                <td>100</td>
+                                <td>98</td>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>

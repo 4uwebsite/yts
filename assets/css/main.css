@@ -1,0 +1,97 @@
+/* 
+    NOTES ***
+*/
+
+/* CSS Reset - START */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+}
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+input, button, textarea, select {
+    font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+/* Only needed if a JS framework like React is used */
+/* #root, #__next {
+    isolation: isolate;
+} */
+/* CSS Reset - END */
+
+
+
+/* COLOURS - START */
+:root {
+    --dark-grey-bg: #212121;
+    --white-base-font-colour: #ECECEC;
+    --gray-500: hsl(0, 0%, 42%);
+    --gray-950: hsl(0, 0%, 7%);
+}
+.dark-grey-bg {
+    background-color: var(--dark-grey-bg);
+}
+/* COLOURS - END */
+
+
+
+/* TYPOGRAPHY - START */
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--white-base-font-colour);
+}
+.details__label {
+    color: var(--gray-500);
+}
+/* TYPOGRAPHY - END */
+
+
+
+/* GLOBAL - START */
+main {
+    max-width: 90vw;
+    max-width: 90dvw;
+}
+p {
+    margin: 0.3em 0;
+}
+/* GLOBAL - END */
+
+
+
+/* CLASSES & IDs - START */
+.info-section__details {
+    min-width: 15em;
+}
+/* CLASSES & IDs - END */
+
+
+
+/* UTILS - START */
+.display--flex {
+    display: flex;
+}
+.justify-content--center {
+    justify-content: center;
+}
+.gap {
+    gap: 1em;
+}
+/* UTILS - END */
+
+
+
+/* TEMP */
+* {
+    /* border: 1px red dotted; */
+}

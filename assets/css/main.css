@@ -36,9 +36,19 @@ p, h1, h2, h3, h4, h5, h6 {
     --white: #ECECEC;
     --yellow: #F5C518;
     --red: #FF0000;
+    --green: #00A67D;
     --gray-500: #6b6b6b;
     --grey-800: #212121;
     --gray-950: #121212;
+}
+.backgroud-color--yellow {
+    background-color: var(--yellow);
+}
+.backgroud-color--red {
+    background-color: var(--red);
+}
+.backgroud-color--green {
+    background-color: var(--green);
 }
 .backgroud-color--grey-800 {
     background-color: var(--grey-800);
@@ -61,6 +71,9 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .font__color--red {
     color: var(--red);
+}
+.font__color--green {
+    color: var(--green);
 }
 .font__size--100 {
     font-size: 0.75rem;
@@ -98,9 +111,19 @@ p, h1, h2, h3, h4, h5, h6 {
 
 /* GLOBAL - START */
 main {
-    max-width: 95vw;
-    max-width: 95dvw;
+    max-width: 99vw;
+    max-width: 99dvw;
     margin: 2em 0;
+    gap: 1em;
+}
+button {
+    border: none;
+    color: var(--gray-950);
+    cursor: pointer;
+    outline: none;
+}
+button:hover, button:active, button:focus {
+    color: var(--white);
 }
 .q1080p {
     background-color: white;
@@ -116,21 +139,37 @@ tbody td {
 .main__movie {
     background-color: var(--gray-950);
     padding: 0.5em;
+    gap: 1em;
 }
 .details__genre ul {
     list-style-type: none;
     padding-left: 0;
+    gap: 1em;
+}
+.details__meta {
+    gap: 0.5em;
 }
 .meta-details-blocks {
     border: 1px solid var(--gray-500);
     padding: 0 0.5em;
+    gap: 0.3em;
 }
 .meta__links {
-    padding: 0.3em 0.5em 0 0.5em;
+    /* padding: 0.3em 0.5em 0 0.5em; */
+}
+.meta__links img {
+    height: 1.3em;
 }
 .details__description {
     max-width: 50ch;
     margin: 1.8em 0 0.8em 0;
+}
+.details__description summary {
+    cursor: pointer;
+    outline: none;
+}
+.details__description summary:hover, .details__description summary:active, .details__description summary:focus {
+    color: var(--white);
 }
 .details__torrents {
     margin: 1.8em 0 0 0;
@@ -145,7 +184,7 @@ tbody td {
 /* UTILS - START */
 .display--flex {
     display: flex;
-    gap: 1em;
+    /* gap: 1em; */
     flex-wrap: wrap;
 }
 .justify-content--center {

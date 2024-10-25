@@ -77,21 +77,131 @@
                         </div>
                         <div class="language__data">EN</div>
                     </div>
-                    <div class="meta__links display--flex">
-                        <div class="meta__imdb">
-                            <i class="fa-brands fa-imdb font__color--yellow font__size--500"></i>
+                    <!-- <div class="meta__links display--flex"> -->
+                    <div class="meta__links">
+                        <button class="font__weight--600 border-radius backgroud-color--yellow">IMDB</button>
+                        <button class="font__weight--600 border-radius backgroud-color--red">YouTube</button>
+                        <button class="font__weight--600 border-radius backgroud-color--green">YTS</button>
+                        <!-- <div class="meta__imdb">
+                            <i class="fa-brands fa-imdb font__color--yellow"></i>
+                             <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/IMDB_Logo_2016.svg" alt="IMDB icon" title="IMDB icon" loading="lazy">
                         </div>
                         <div class="meta__youtube">
                             <i class="fa-brands fa-youtube font__size--600 font__color--red"></i>
                         </div>
                         <div class="meta__yts">
                             <i class="fa-solid fa-link font__color--white font__size--400"></i>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <div class="details__torrents border-radius">
                     <table>
-                        <caption>Available Torrents</caption>
+                        <!-- <caption>Available Torrents</caption> -->
+                        <thead>
+                            <tr>
+                                <th>QAL</th>
+                                <th>TYPE</th>
+                                <th>CODEC</th>
+                                <th>SIZE</th>
+                                <th>BD</th>
+                                <th>A-CH</th>
+                                <th>SEEDS</th>
+                                <th>PEERS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="https://yts.mx/torrent/download/7E67641743B52D65291AE9C2A4451DCE5771EC0D">720p</a></td>
+                                <td>web</td>
+                                <td>x264</td>
+                                <td>950.86 MB</td>
+                                <td>8</td>
+                                <td>2.0</td>
+                                <td>100</td>
+                                <td>98</td>
+                            </tr>
+                            <tr class="q1080p">
+                                <td><a href="https://yts.mx/torrent/download/7E67641743B52D65291AE9C2A4451DCE5771EC0D">1080p</a></td>
+                                <td>web</td>
+                                <td>x264</td>
+                                <td>950.86 MB</td>
+                                <td>8</td>
+                                <td>2.0</td>
+                                <td>100</td>
+                                <td>98</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://yts.mx/torrent/download/7E67641743B52D65291AE9C2A4451DCE5771EC0D">720p</a></td>
+                                <td>web</td>
+                                <td>x264</td>
+                                <td>950.86 MB</td>
+                                <td>8</td>
+                                <td>2.0</td>
+                                <td>100</td>
+                                <td>98</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </article>
+        </div>
+        <div class="main__movie display--flex border-radius">
+            <aside class="movie__poster">
+                <img class="border-radius" src="https://yts.mx/assets/images/movies/blink_twice_2024/medium-cover.jpg" alt="Movie poser" title="Movie poser" loading="lazy">
+            </aside>
+            <article class="movie__details font__size--100">
+                <div class="details__title">
+                    <h2 class="font__color--white">Blink Twice <span class="title__year">2024</span></h2>
+                </div>
+                <div class="details__genre">
+                    <ul class="display--flex">
+                        <li>Mystery</li>
+                        <li>Thriller</li>
+                    </ul>
+                </div>
+                <details class="details__description">
+                    <summary class="font__weight--600">STORY</summary>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, sint. Nam aspernatur hic commodi, consectetur, assumenda vitae, quia fugiat numquam perspiciatis repudiandae accusantium saepe quae labore a? Commodi, tempore sint.
+                </details>
+                <div class="details__meta display--flex">
+                    <div class="meta__rating display--flex align-items--center meta-details-blocks border-radius">
+                        <div class="rating__icon">
+                            <i class="fas fa-star font__color--yellow font__size--200"></i>
+                        </div>
+                        <div class="rating__data">6.5</div>
+                    </div>
+                    <div class="meta__runtime display--flex align-items--center meta-details-blocks border-radius">
+                        <div class="runtime__icon">
+                            <i class="fa-solid fa-clock font__color--white font__size--200"></i>
+                        </div>
+                        <div class="runtime__data">102 mins</div>
+                    </div>
+                    <div class="meta__language display--flex align-items--center meta-details-blocks border-radius">
+                        <div class="language__icon">
+                            <i class="fa-solid fa-language font__color--white font__size--200"></i>
+                        </div>
+                        <div class="language__data">EN</div>
+                    </div>
+                    <!-- <div class="meta__links display--flex"> -->
+                    <div class="meta__links">
+                        <button class="font__weight--600 border-radius backgroud-color--yellow">IMDB</button>
+                        <button class="font__weight--600 border-radius backgroud-color--red">YouTube</button>
+                        <button class="font__weight--600 border-radius backgroud-color--green">YTS</button>
+                        <!-- <div class="meta__imdb">
+                            <i class="fa-brands fa-imdb font__color--yellow"></i>
+                             <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/IMDB_Logo_2016.svg" alt="IMDB icon" title="IMDB icon" loading="lazy">
+                        </div>
+                        <div class="meta__youtube">
+                            <i class="fa-brands fa-youtube font__size--600 font__color--red"></i>
+                        </div>
+                        <div class="meta__yts">
+                            <i class="fa-solid fa-link font__color--white font__size--400"></i>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="details__torrents border-radius">
+                    <table>
+                        <!-- <caption>Available Torrents</caption> -->
                         <thead>
                             <tr>
                                 <th>QAL</th>

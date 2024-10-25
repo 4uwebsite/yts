@@ -10,6 +10,7 @@ This app shows which movie torrents are available for download based on the HTML
 
 
 # TODO
+- [-] Set active state styles for buttons & links
 - [-] HTML & CSS - Refactor & Validate
 - [-] JS
 - [-] JS - Refactor & Validate

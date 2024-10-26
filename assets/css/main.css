@@ -33,13 +33,36 @@ p, h1, h2, h3, h4, h5, h6 {
 
 /* COLOURS - START */
 :root {
-    --dark-grey-bg: #212121;
-    --white-base-font-colour: #ECECEC;
+    /* --white: #ECECEC;
+    --yellow: #F5C518;
+    --red: #FF0000;
+    --green: #00A67D;
+    --gray-500: #6b6b6b;
+    --grey-800: #212121;
+    --gray-950: #121212; */
+    --white: hsl(0, 0%, 93%);
+    --yellow: hsl(48, 100%, 51%);
+    --yellow--dark: hsl(48, 90%, 38%);
+    --red: hsl(0, 100%, 50%);
+    --red--dark: hsl(0, 95%, 40%);
+    --green: hsl(172, 97%, 25%);
+    --green--dark: hsl(172, 89%, 18%);
     --gray-500: hsl(0, 0%, 42%);
+    --grey-800: hsl(0, 0%, 13%);
     --gray-950: hsl(0, 0%, 7%);
+
 }
-.dark-grey-bg {
-    background-color: var(--dark-grey-bg);
+.backgroud-color--yellow {
+    background-color: var(--yellow);
+}
+.backgroud-color--red {
+    background-color: var(--red);
+}
+.backgroud-color--green {
+    background-color: var(--green);
+}
+.backgroud-color--grey-800 {
+    background-color: var(--grey-800);
 }
 /* COLOURS - END */
 
@@ -48,30 +71,155 @@ p, h1, h2, h3, h4, h5, h6 {
 /* TYPOGRAPHY - START */
 * {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: var(--white-base-font-colour);
-}
-.details__label {
     color: var(--gray-500);
+    line-height: 1.5rem;
+}
+/* Font Color */
+.font__color--white {
+    color: var(--white);
+}
+.font__color--yellow {
+    color: var(--yellow);
+}
+.font__color--red {
+    color: var(--red);
+}
+.font__color--green {
+    color: var(--green);
+}
+/* Font Size */
+.font__size--100 {
+    font-size: 0.75rem;
+}
+.font__size--200 {
+    font-size: 0.8rem;
+}
+.font__size--400 {
+    font-size: 1rem;
+}
+.font__size--500 {
+    font-size: 1.1rem;
+}
+.font__size--600 {
+    font-size: 1.2rem;
+}
+/* Font Weight */
+.font__weight--100 {
+    font-weight: 100;
+}
+.font__weight--600 {
+    font-weight: 600;
 }
 /* TYPOGRAPHY - END */
 
 
 
+/* MATERIAL ICONS - START */
+/* .material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+} */
+/* MATERIAL ICONS - END */
+
+
+
 /* GLOBAL - START */
 main {
-    max-width: 90vw;
-    max-width: 90dvw;
+    max-width: 99vw;
+    max-width: 99dvw;
+    margin: 2em 0;
+    gap: 1em;
 }
-p {
-    margin: 0.3em 0;
+button {
+    border: none;
+    color: var(--gray-950);
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+button:active {
+    color: var(--white);
+}
+.q1080p {
+    background-color: white;
+}
+table {
+    width: 100%;
+}
+tbody td {
+    padding: 0 0.3em;
+}
+tbody tr {
+    transition: background-color 0.1s ease;
+}
+tbody tr:hover, tbody tr:active {
+    background-color: var(--white);
 }
 /* GLOBAL - END */
 
 
 
 /* CLASSES & IDs - START */
-.info-section__details {
-    min-width: 15em;
+.main__movie {
+    background-color: var(--gray-950);
+    padding: 0 0.5em 0 0;
+    gap: 1em;
+}
+.movie__poster img {
+    border-radius: 0.3em 0 0 0.3em;
+}
+.movie__details {
+    margin-top: 1em;
+    margin-right: 1em;
+}
+.details__genre ul {
+    list-style-type: none;
+    padding-left: 0;
+    gap: 1em;
+}
+.details__meta {
+    gap: 0.5em;
+}
+.meta-details-blocks {
+    border: 1px solid var(--gray-500);
+    padding: 0 0.5em;
+    gap: 0.3em;
+}
+.meta__links {
+    /* padding: 0.3em 0.5em 0 0.5em; */
+}
+.imdb:hover, .imdb:focus {
+    background-color: var(--yellow--dark);
+}
+.youtube:hover, .youtube:focus {
+    background-color: var(--red--dark);
+}
+.yts:hover, .yts:focus {
+    background-color: var(--green--dark);
+}
+/* .meta__links img {
+    height: 1.3em;
+} */
+.details__description {
+    max-width: 50ch;
+    margin: 1.8em 0 0.8em 0;
+    /* margin: 0.8em 0; */
+}
+.details__description summary {
+    cursor: pointer;
+    outline: none;
+}
+.details__description summary:hover, .details__description summary:active, .details__description summary:focus {
+    color: var(--white);
+}
+.details__torrents {
+    margin: 1.8em 0 0 0;
+    /* padding: 0.3em; */
+    /* border: 1px solid var(--gray-500); */
+    text-align: center;
 }
 /* CLASSES & IDs - END */
 
@@ -80,12 +228,17 @@ p {
 /* UTILS - START */
 .display--flex {
     display: flex;
+    /* gap: 1em; */
+    flex-wrap: wrap;
 }
 .justify-content--center {
     justify-content: center;
 }
-.gap {
-    gap: 1em;
+.align-items--center {
+    align-items: center;
+}
+.border-radius {
+    border-radius: 0.3em;
 }
 /* UTILS - END */
 

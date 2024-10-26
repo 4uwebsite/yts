@@ -33,13 +33,24 @@ p, h1, h2, h3, h4, h5, h6 {
 
 /* COLOURS - START */
 :root {
-    --white: #ECECEC;
+    /* --white: #ECECEC;
     --yellow: #F5C518;
     --red: #FF0000;
     --green: #00A67D;
     --gray-500: #6b6b6b;
     --grey-800: #212121;
-    --gray-950: #121212;
+    --gray-950: #121212; */
+    --white: hsl(0, 0%, 93%);
+    --yellow: hsl(48, 100%, 51%);
+    --yellow--dark: hsl(48, 95%, 45%);
+    --red: hsl(0, 100%, 50%);
+    --red--dark: hsl(0, 97%, 45%);
+    --green: hsl(172, 97%, 25%);
+    --green--dark: hsl(172, 97%, 27%);
+    --gray-500: hsl(0, 0%, 42%);
+    --grey-800: hsl(0, 0%, 13%);
+    --gray-950: hsl(0, 0%, 7%);
+
 }
 .backgroud-color--yellow {
     background-color: var(--yellow);
@@ -121,8 +132,9 @@ button {
     color: var(--gray-950);
     cursor: pointer;
     outline: none;
+    transition: background-color 0.3s ease;
 }
-button:hover, button:active, button:focus {
+button:active {
     color: var(--white);
 }
 .q1080p {
@@ -130,6 +142,9 @@ button:hover, button:active, button:focus {
 }
 tbody td {
     padding: 0 0.3em;
+}
+tbody tr:hover, tbody tr:active {
+    background-color: var(--white);
 }
 /* GLOBAL - END */
 
@@ -157,12 +172,22 @@ tbody td {
 .meta__links {
     /* padding: 0.3em 0.5em 0 0.5em; */
 }
-.meta__links img {
-    height: 1.3em;
+.imdb:hover, .imdb:focus {
+    background-color: var(--yellow--dark);
 }
+.youtube:hover, .youtube:focus {
+    background-color: var(--red--dark);
+}
+.yts:hover, .yts:focus {
+    background-color: var(--green--dark);
+}
+/* .meta__links img {
+    height: 1.3em;
+} */
 .details__description {
     max-width: 50ch;
     margin: 1.8em 0 0.8em 0;
+    /* margin: 0.8em 0; */
 }
 .details__description summary {
     cursor: pointer;

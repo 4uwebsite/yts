@@ -42,11 +42,11 @@ p, h1, h2, h3, h4, h5, h6 {
     --gray-950: #121212; */
     --white: hsl(0, 0%, 93%);
     --yellow: hsl(48, 100%, 51%);
-    --yellow--dark: hsl(48, 95%, 45%);
+    --yellow--dark: hsl(48, 90%, 38%);
     --red: hsl(0, 100%, 50%);
-    --red--dark: hsl(0, 97%, 45%);
+    --red--dark: hsl(0, 95%, 40%);
     --green: hsl(172, 97%, 25%);
-    --green--dark: hsl(172, 97%, 27%);
+    --green--dark: hsl(172, 89%, 18%);
     --gray-500: hsl(0, 0%, 42%);
     --grey-800: hsl(0, 0%, 13%);
     --gray-950: hsl(0, 0%, 7%);
@@ -74,6 +74,7 @@ p, h1, h2, h3, h4, h5, h6 {
     color: var(--gray-500);
     line-height: 1.5rem;
 }
+/* Font Color */
 .font__color--white {
     color: var(--white);
 }
@@ -86,6 +87,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .font__color--green {
     color: var(--green);
 }
+/* Font Size */
 .font__size--100 {
     font-size: 0.75rem;
 }
@@ -100,6 +102,10 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .font__size--600 {
     font-size: 1.2rem;
+}
+/* Font Weight */
+.font__weight--100 {
+    font-weight: 100;
 }
 .font__weight--600 {
     font-weight: 600;
@@ -140,8 +146,14 @@ button:active {
 .q1080p {
     background-color: white;
 }
+table {
+    width: 100%;
+}
 tbody td {
     padding: 0 0.3em;
+}
+tbody tr {
+    transition: background-color 0.1s ease;
 }
 tbody tr:hover, tbody tr:active {
     background-color: var(--white);
@@ -153,8 +165,15 @@ tbody tr:hover, tbody tr:active {
 /* CLASSES & IDs - START */
 .main__movie {
     background-color: var(--gray-950);
-    padding: 0.5em;
+    padding: 0 0.5em 0 0;
     gap: 1em;
+}
+.movie__poster img {
+    border-radius: 0.3em 0 0 0.3em;
+}
+.movie__details {
+    margin-top: 1em;
+    margin-right: 1em;
 }
 .details__genre ul {
     list-style-type: none;

@@ -4,13 +4,12 @@ This app shows which movie torrents are available for download based on the HTML
 
 
 # Version Control
-- 1.1.0 - R&D code.
+- 1.1.0 - Non Refactored Code (HTML/CSS).
 - 1.0.0 - R&D code.
 
 
 
 # TODO
-- [-] Smooth expand details/summary
 - [-] HTML & CSS - Refactor & Validate
 - [-] JS
 - [-] JS - Refactor & Validate
@@ -20,6 +19,7 @@ This app shows which movie torrents are available for download based on the HTML
 - [-] Refactor & Validate
 - [-] ReadMe & Git doc
 - [-] Open Graph featured image
+- [-] Smooth expand details/summary
 - [x] Set active state styles for buttons & links
 
 

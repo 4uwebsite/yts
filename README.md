@@ -11,6 +11,7 @@ This app shows which movie torrents are available for download based on the HTML
 
 
 # TODO
+- [-] Moving UI elements (meta data to genre)
 - [-] HTML & CSS - Refactor & Validate
 - [-] JS
 - [-] JS - Refactor & Validate

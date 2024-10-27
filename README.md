@@ -4,6 +4,7 @@ This app shows which movie torrents are available for download based on the HTML
 
 
 # Version Control
+- 1.1.2 - UI Elements changes.
 - 1.1.1 - Refactoring & Validation (HTML/CSS).
 - 1.1.0 - Non Refactored Code (HTML/CSS).
 - 1.0.0 - R&D code.
